@@ -8,13 +8,20 @@ output: html_document
 ```{r setup, include=FALSE}
 library(tidyverse)
 library(nycflights13)
+library()
 ```
 
 ## O Pacote Tidyverse
 
-Uma parte extremamente importante na análise de dados envolve a obtenção e organização
+Uma parte extremamente importante na análise de dados envolve a organização e a estruturação dos mesmos, para que possam ser analisados computacionalmente. Mas muitas vezes, os dados que dispomos não estão exatamente do jeito que precisamos, e muito tempo é gasto na retabulação/reestruturação de planilhas e de tabelas (muitas vezes direto no Excel/Libre Office).
+
+Tendo isso em mente, o objetivo deste minicurso é introduzir o pacote TidyVerse, um compilado de 8 diferentes pacotes (ggplot2, tibble, tidyr, readr, purrr, dplyr, stringr e forcats), cada um tratando de um particular aspecto da criação de dados *tidy*.
+
+### Instalando o TidyVerse
 
 ```{r, eval=FALSE}
+install.packages("tidyverse")
+
 library(tidyverse)
 # ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
 # ✔ ggplot2 3.3.6     ✔ purrr   0.3.4
